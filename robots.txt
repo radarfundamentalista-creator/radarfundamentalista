@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://radarfundamentalista-creator.github.io/radarfundamentalista/sitemap.xml
