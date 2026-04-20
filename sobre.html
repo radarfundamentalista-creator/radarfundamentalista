@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre o Radar Fundamentalista | Radar Fundamentalista</title>
+<meta name="description" content="O Radar Fundamentalista aplica análise quantitativa rigorosa ao mercado brasileiro. Saiba como funciona o nosso score e o que cada indicador mede.">
+<meta name="keywords" content="análise fundamentalista, metodologia, score, P/L, P/VP, DY, ROE, ROIC, semáforo, B3">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sobre o Radar Fundamentalista | Radar Fundamentalista">
+<meta property="og:description" content="O Radar Fundamentalista aplica análise quantitativa rigorosa ao mercado brasileiro. Saiba como funciona o nosso score e o que cada indicador mede.">
+<meta property="og:site_name" content="Radar Fundamentalista">
+<link rel="canonical" href="https://www.radarfundamentalista.com.br/sobre.html">
+<link rel="alternate" type="application/rss+xml" title="Radar Fundamentalista" href="https://www.radarfundamentalista.com.br/feed.xml">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Radar Fundamentalista",
+  "url": "https://www.radarfundamentalista.com.br",
+  "description": "O Radar Fundamentalista aplica análise quantitativa rigorosa ao mercado brasileiro. Saiba como funciona o nosso score e o que cada indicador mede.",
+  "sameAs": [
+    "https://t.me/radarfundamentalista"
+  ]
+}</script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+    background: #0E1117;
+    color: #D0D8F0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+a { color: #00E676; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Layout */
+.container { max-width: 780px; margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+.site-header {
+    border-bottom: 1px solid #1A2035;
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.brand { font-size: 1.1rem; font-weight: 700; color: #D0D8F0; letter-spacing: 0.5px; }
+.brand span { color: #00E676; }
+.tagline { font-size: 0.8rem; color: #4D5580; }
+
+/* Post */
+.post-header { margin-bottom: 32px; }
+.post-date { font-size: 0.85rem; color: #4D5580; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 1px; }
+.post-title { font-size: 1.8rem; font-weight: 700; color: #D0D8F0; line-height: 1.3; margin-bottom: 12px; }
+.post-subtitle { font-size: 1rem; color: #6B7494; }
+
+/* Conteúdo */
+.post-content { margin: 32px 0; }
+.post-content p { margin-bottom: 1.2em; color: #6B7494; }
+.post-content strong { color: #D0D8F0; font-weight: 600; }
+.post-content em { color: #FFD740; font-style: normal; }
+.post-content h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #00E676;
+    margin: 28px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #1A2035;
+}
+.post-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #D0D8F0;
+    margin: 20px 0 8px;
+}
+
+/* Cards de imagem */
+.cards-section { margin: 40px 0; }
+.cards-title { font-size: 0.8rem; color: #4D5580; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+}
+.cards-grid img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #1A2035;
+    display: block;
+}
+
+/* Tags de tickers */
+.tickers-bar { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
+.ticker-tag {
+    background: #151B2E;
+    color: #6B7494;
+    border: 1px solid #1A2035;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    font-family: monospace;
+}
+
+/* Disclaimer */
+.disclaimer {
+    margin: 40px 0 20px;
+    padding: 14px 18px;
+    background: #151B2E;
+    border-left: 3px solid #4D5580;
+    border-radius: 4px;
+    font-size: 0.82rem;
+    color: #4D5580;
+}
+
+/* Paginação / navegação */
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0 32px;
+    gap: 12px;
+}
+.post-nav a {
+    background: #111827;
+    border: 1px solid #1A2035;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #6B7494;
+    transition: border-color 0.2s;
+}
+.post-nav a:hover { border-color: #00E676; color: #D0D8F0; text-decoration: none; }
+
+/* Footer */
+.site-footer {
+    border-top: 1px solid #1A2035;
+    padding: 24px 0;
+    margin-top: 60px;
+    font-size: 0.82rem;
+    color: #4D5580;
+    text-align: center;
+}
+
+/* Index — lista de posts */
+.posts-list { list-style: none; }
+.posts-list li {
+    padding: 18px 0;
+    border-bottom: 1px solid #1A2035;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.posts-list .p-date { font-size: 0.82rem; color: #4D5580; min-width: 90px; font-family: monospace; }
+.posts-list .p-title { font-size: 0.95rem; color: #D0D8F0; }
+.posts-list .p-title a { color: #D0D8F0; }
+.posts-list .p-title a:hover { color: #00E676; }
+.posts-list .p-tickers { font-size: 0.75rem; color: #4D5580; font-family: monospace; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .post-title { font-size: 1.4rem; }
+    .cards-grid { grid-template-columns: 1fr 1fr; }
+}
+
+
+/* ── Sobre — estilos específicos ─────────────────────── */
+.sobre-hero {
+    padding: 56px 0 40px;
+    border-bottom: 1px solid #1A2035;
+    margin-bottom: 52px;
+}
+.sobre-hero h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: #D0D8F0;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+.sobre-hero .filosofia {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #FFD740;
+    margin-bottom: 20px;
+    border-left: 3px solid #FFD740;
+    padding-left: 16px;
+    line-height: 1.5;
+}
+.sobre-hero p {
+    color: #6B7494;
+    max-width: 620px;
+    font-size: 1rem;
+}
+
+/* Seções de conteúdo */
+.sobre-section {
+    margin-bottom: 56px;
+}
+.sobre-section h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #00E676;
+    margin-bottom: 24px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1A2035;
+}
+.sobre-section p {
+    color: #6B7494;
+    margin-bottom: 1.1em;
+    line-height: 1.75;
+}
+.sobre-section strong {
+    color: #D0D8F0;
+    font-weight: 600;
+}
+
+/* Grid de métricas */
+.metricas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 8px;
+}
+.metrica-card {
+    background: #111827;
+    border: 1px solid #1A2035;
+    border-radius: 10px;
+    padding: 20px 22px;
+    transition: border-color 0.2s;
+}
+.metrica-card:hover {
+    border-color: #00E67655;
+}
+.metrica-nome {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #00E676;
+    margin-bottom: 4px;
+    font-family: monospace;
+}
+.metrica-titulo {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #D0D8F0;
+    margin-bottom: 10px;
+}
+.metrica-desc {
+    font-size: 0.88rem;
+    color: #6B7494;
+    line-height: 1.6;
+}
+.metrica-formula {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-family: monospace;
+    color: #FFD740;
+    background: #151B2E;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+/* Semáforos */
+.semaforos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+.semaforos-table th,
+.semaforos-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #1A2035;
+    font-size: 0.9rem;
+}
+.semaforos-table th {
+    color: #4D5580;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
+.semaforos-table td {
+    color: #6B7494;
+}
+.sem-verde  { color: #00E676; font-size: 1.1rem; }
+.sem-amarelo{ color: #FFD740; font-size: 1.1rem; }
+.sem-vermelho{ color: #F44336; font-size: 1.1rem; }
+
+/* Score visual */
+.score-explainer {
+    background: #111827;
+    border: 1px solid #1A2035;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-top: 8px;
+}
+.score-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #1A2035;
+}
+.score-row:last-child { border-bottom: none; }
+.score-peso {
+    min-width: 42px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    font-family: monospace;
+    color: #FFD740;
+    text-align: center;
+    background: #151B2E;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.score-label {
+    font-size: 0.88rem;
+    color: #D0D8F0;
+    font-weight: 600;
+    min-width: 110px;
+}
+.score-detalhe {
+    font-size: 0.85rem;
+    color: #6B7494;
+}
+
+@media (max-width: 600px) {
+    .metricas-grid { grid-template-columns: 1fr; }
+    .sobre-hero h1 { font-size: 1.5rem; }
+}
+</style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7VXBYB4VF0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7VXBYB4VF0');
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <div>
+      <div class="brand"><span>▲</span> Radar Fundamentalista</div>
+      <div class="tagline">Análise quantitativa do mercado brasileiro</div>
+    </div>
+    <nav style="display:flex;gap:20px;align-items:center">
+    <a href="./index.html" style="font-size:0.85rem;color:#4D5580">Relatórios</a>
+    <a href="./sobre.html" style="font-size:0.85rem;color:#4D5580">Sobre</a>
+  </nav>
+  </div>
+</header>
+<main class="container">
+
+  <!-- ── Hero ──────────────────────────────────────────── -->
+  <section class="sobre-hero">
+    <h1>Sobre o Radar Fundamentalista</h1>
+    <div class="filosofia">"A Matemática não mente.<br>Mente quem faz mau uso dela."</div>
+    <p>
+      O Radar Fundamentalista é um sistema de análise quantitativa do mercado de capitais
+      brasileiro. Todos os dias úteis, o sistema coleta dados públicos de centenas de
+      empresas listadas na B3, aplica um modelo de pontuação multifatorial e publica
+      um relatório com os ativos que melhor se enquadram nos critérios de
+      <strong>valor, qualidade e retorno</strong>.
+    </p>
+    <p style="margin-top:14px">
+      Não há opinião subjetiva, nem viés de seleção manual.
+      <strong>Os critérios são os mesmos para todos os ativos, todos os dias.</strong>
+    </p>
+  </section>
+
+  <!-- ── O que é análise fundamentalista quantitativa? ── -->
+  <section class="sobre-section">
+    <h2>O que é análise fundamentalista quantitativa?</h2>
+    <p>
+      Análise fundamentalista avalia se o preço de uma ação reflete adequadamente a
+      saúde financeira da empresa. Investidores lendários como Benjamin Graham e Warren
+      Buffett tornaram essa abordagem famosa: comprar empresas sólidas quando o mercado
+      as oferece com desconto.
+    </p>
+    <p>
+      A versão <strong>quantitativa</strong> sistematiza esse processo. Em vez de analisar
+      uma empresa por vez com julgamentos subjetivos, definimos critérios objetivos —
+      P/L, P/VP, DY, ROE, ROIC, Margem EBIT — e calculamos um <strong>score numérico</strong>
+      para cada ativo. O computador analisa toda a bolsa em segundos, sem fadiga
+      decisional e sem emoções.
+    </p>
+    <p>
+      O resultado é um <strong>filtro rigoroso e reproduzível</strong>: qualquer pessoa
+      com os mesmos dados e os mesmos critérios chegará ao mesmo ranking.
+      A matemática não tem agenda.
+    </p>
+  </section>
+
+  <!-- ── As métricas ──────────────────────────────────── -->
+  <section class="sobre-section">
+    <h2>As métricas utilizadas</h2>
+    <div class="metricas-grid">
+
+      <div class="metrica-card">
+        <div class="metrica-nome">P/L</div>
+        <div class="metrica-titulo">Preço / Lucro</div>
+        <div class="metrica-desc">
+          Quantos anos de lucro atual você paga ao comprar a ação hoje.
+          Um P/L de 10 significa que, ao ritmo atual, o lucro pagaria o preço
+          em 10 anos. Quanto <em>menor</em>, mais barata está a empresa em relação
+          aos seus ganhos.
+        </div>
+        <span class="metrica-formula">filtro: P/L ≤ 15</span>
+      </div>
+
+      <div class="metrica-card">
+        <div class="metrica-nome">P/VP</div>
+        <div class="metrica-titulo">Preço / Valor Patrimonial</div>
+        <div class="metrica-desc">
+          Compara o preço de mercado com o patrimônio líquido contábil por ação.
+          P/VP abaixo de 1 significa que o mercado paga menos pelo ativo do que
+          ele vale "no papel". Indica possível desconto em relação ao ativo real.
+        </div>
+        <span class="metrica-formula">filtro: P/VP ≤ 2,0</span>
+      </div>
+
+      <div class="metrica-card">
+        <div class="metrica-nome">DY</div>
+        <div class="metrica-titulo">Dividend Yield</div>
+        <div class="metrica-desc">
+          Retorno em dividendos em relação ao preço atual. DY de 8% significa
+          que, se a empresa mantiver o mesmo patamar de proventos, você recebe
+          8% ao ano só em dividendos, independente da valorização do papel.
+        </div>
+        <span class="metrica-formula">filtro: DY ≥ 5%</span>
+      </div>
+
+      <div class="metrica-card">
+        <div class="metrica-nome">ROE</div>
+        <div class="metrica-titulo">Retorno sobre o Patrimônio</div>
+        <div class="metrica-desc">
+          Mede quanto lucro a empresa gera para cada real de patrimônio dos
+          acionistas. ROE de 15% significa que a empresa "rende" 15% ao ano
+          sobre o próprio capital. Empresas com ROE alto e consistente tendem
+          a criar valor de forma sustentável.
+        </div>
+        <span class="metrica-formula">filtro: ROE ≥ 10%</span>
+      </div>
+
+      <div class="metrica-card">
+        <div class="metrica-nome">ROIC</div>
+        <div class="metrica-titulo">Retorno sobre o Capital Investido</div>
+        <div class="metrica-desc">
+          Similar ao ROE, mas considera todo o capital empregado no negócio
+          (próprio + terceiros). Empresas com ROIC alto e custo de capital baixo
+          são criadoras líquidas de riqueza — um dos critérios favoritos dos
+          melhores gestores de value investing do mundo.
+        </div>
+        <span class="metrica-formula">filtro: ROIC ≥ 8%</span>
+      </div>
+
+      <div class="metrica-card">
+        <div class="metrica-nome">Margem EBIT</div>
+        <div class="metrica-titulo">Margem Operacional</div>
+        <div class="metrica-desc">
+          Percentual da receita que se transforma em lucro operacional, antes
+          de juros e impostos. Margem de 20% significa que a empresa retém R$ 20
+          de cada R$ 100 vendidos como resultado das operações. Margens altas
+          indicam vantagem competitiva ou poder de precificação.
+        </div>
+        <span class="metrica-formula">filtro: Margem ≥ 5%</span>
+      </div>
+
+      <div class="metrica-card">
+        <div class="metrica-nome">Dív. Bruta/PL</div>
+        <div class="metrica-titulo">Alavancagem Financeira</div>
+        <div class="metrica-desc">
+          Relação entre dívida total e patrimônio líquido. Empresas muito
+          alavancadas são vulneráveis a crises, juros altos e choques de
+          resultado. O sistema penaliza alavancagem excessiva, especialmente
+          em conjunturas de juros elevados como o Brasil frequentemente enfrenta.
+        </div>
+        <span class="metrica-formula">filtro: Dívidida ≤ 3× PL</span>
+      </div>
+
+      <div class="metrica-card">
+        <div class="metrica-nome">Momentum</div>
+        <div class="metrica-titulo">Tendência de Preço (12m)</div>
+        <div class="metrica-desc">
+          Variação do preço nos últimos 12 meses. Ativos em tendência negativa
+          podem indicar deterioração de fundamentos ainda não refletida nos
+          demonstrativos contábeis — ou apenas desconto temporário. O sistema
+          usa momentum como filtro secundário, não eliminatório.
+        </div>
+        <span class="metrica-formula">filtro: momentum ≥ 0%</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── O Score ──────────────────────────────────────── -->
+  <section class="sobre-section">
+    <h2>Como funciona o Score consolidado</h2>
+    <p>
+      Cada ativo que passa pelos filtros mínimos recebe um <strong>score de 0 a 100</strong>,
+      calculado como a média ponderada de seis componentes. O peso de cada componente
+      foi calibrado para refletir a contribuição relativa de cada métrica na avaliação
+      de valor e qualidade de uma empresa.
+    </p>
+    <div class="score-explainer">
+      <div class="score-row">
+        <span class="score-peso">20%</span>
+        <span class="score-label">P/L</span>
+        <span class="score-detalhe">Quanto mais barato relativo ao lucro, maior a pontuação neste componente.</span>
+      </div>
+      <div class="score-row">
+        <span class="score-peso">15%</span>
+        <span class="score-label">P/VP</span>
+        <span class="score-detalhe">Desconto em relação ao valor patrimonial contábil.</span>
+      </div>
+      <div class="score-row">
+        <span class="score-peso">20%</span>
+        <span class="score-label">DY</span>
+        <span class="score-detalhe">Retorno em proventos — premia empresas que distribuem caixa de forma consistente.</span>
+      </div>
+      <div class="score-row">
+        <span class="score-peso">20%</span>
+        <span class="score-label">ROE</span>
+        <span class="score-detalhe">Qualidade: capacidade de gerar retorno sobre o capital dos acionistas.</span>
+      </div>
+      <div class="score-row">
+        <span class="score-peso">15%</span>
+        <span class="score-label">ROIC</span>
+        <span class="score-detalhe">Eficiência operacional sobre capital total empregado.</span>
+      </div>
+      <div class="score-row">
+        <span class="score-peso">10%</span>
+        <span class="score-label">Margem EBIT</span>
+        <span class="score-detalhe">Proteção de margem: empresas com margens sólidas resistem melhor a adversidades.</span>
+      </div>
+    </div>
+    <p style="margin-top: 20px; font-size:0.9rem; color:#4D5580">
+      A pontuação de cada componente é normalizada em relação ao universo de ativos
+      analisados naquele dia, de forma que o score é sempre relativo — um score 80
+      significa que o ativo está entre os 20% melhores do mercado naquele critério,
+      não que atingiu um patamar absoluto.
+    </p>
+  </section>
+
+  <!-- ── Semáforos ─────────────────────────────────────── -->
+  <section class="sobre-section">
+    <h2>O sistema de semáforos</h2>
+    <p>
+      O semáforo resume de forma imediata a posição do ativo no ranking geral.
+      É calculado a partir do score consolidado e de filtros qualitativos adicionais.
+    </p>
+    <table class="semaforos-table">
+      <thead>
+        <tr>
+          <th>Semáforo</th>
+          <th>Score</th>
+          <th>Interpretação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="sem-verde">🟢</span></td>
+          <td>≥ 65</td>
+          <td>Ativo dentro dos critérios de qualidade e com desconto aparente. Merece atenção aprofundada.</td>
+        </tr>
+        <tr>
+          <td><span class="sem-amarelo">🟡</span></td>
+          <td>40 – 64</td>
+          <td>Ativo razoável, com algum ponto fraco no modelo. Observar evolução antes de qualquer decisão.</td>
+        </tr>
+        <tr>
+          <td><span class="sem-vermelho">🔴</span></td>
+          <td>&lt; 40</td>
+          <td>Ativo fora dos critérios ou com indicadores deteriorados. Não recomendado pelo modelo.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:16px; font-size:0.9rem">
+      O semáforo <strong>não é uma recomendação de compra</strong>. É o resultado de um
+      modelo matemático sobre dados históricos públicos. Use-o como ponto de partida
+      para sua própria due diligence.
+    </p>
+  </section>
+
+  <!-- ── Sobre os dados ───────────────────────────────── -->
+  <section class="sobre-section">
+    <h2>Origem dos dados</h2>
+    <p>
+      Os dados fundamentalistas são coletados automaticamente do portal
+      <strong>Fundamentus</strong> (fundamentus.com.br) e da B3, que consolidam
+      informações públicas divulgadas pelas próprias empresas em seus demonstrativos
+      financeiros (ITR e DFP). Os dados de cotação são intraday da B3.
+    </p>
+    <p>
+      A coleta e o processamento ocorrem <strong>todos os dias úteis após o fechamento
+      da B3</strong> (aproximadamente às 18h), garantindo que os preços reflitam o
+      fechamento do pregão mais recente.
+    </p>
+    <p>
+      Nenhum dado é inserido ou editado manualmente. O pipeline é 100% automatizado
+      e auditável — da coleta ao relatório publicado.
+    </p>
+  </section>
+
+  <!-- ── CTA ───────────────────────────────────────────── -->
+  <div style="
+        background:#151B2E;
+        border:1px solid #00E67633;
+        border-radius:10px;
+        padding:20px 24px;
+        margin:40px 0;
+        display:flex;
+        align-items:center;
+        gap:16px;
+        flex-wrap:wrap;
+    ">
+      <div style="font-size:2rem;line-height:1">📡</div>
+      <div style="flex:1;min-width:200px">
+        <div style="font-weight:700;color:#D0D8F0;margin-bottom:4px">
+          Receba o Radar todo dia, gratuitamente
+        </div>
+        <div style="font-size:0.9rem;color:#6B7494">
+          Análise fundamentalista diária direto no seu Telegram.
+        </div>
+      </div>
+      <a href="https://t.me/radarfundamentalista" target="_blank" rel="noopener" style="
+          background:#00E676;
+          color:#000;
+          font-weight:700;
+          padding:10px 20px;
+          border-radius:6px;
+          white-space:nowrap;
+          font-size:0.95rem;
+          text-decoration:none;
+      ">Assinar canal →</a>
+    </div>
+
+  <!-- ── Disclaimer ──────────────────────────────────── -->
+  <div class="disclaimer" style="margin-bottom:40px">
+    <strong>Aviso importante:</strong> Análise quantitativa automatizada. Não é recomendação de investimento. As informações publicadas aqui
+    têm caráter exclusivamente educacional e informativo. Sempre consulte um
+    profissional habilitado antes de tomar decisões de investimento.
+  </div>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <p>Análise quantitativa automatizada. Não é recomendação de investimento.</p>
+    <p style="margin-top:8px">© 2026 Radar Fundamentalista · Dados: Fundamentus + B3</p>
+  </div>
+</footer>
+</body>
+</html>
