@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Radar Fundamentalista</title>
+    <link>https://radarfundamentalista-creator.github.io/radarfundamentalista/index.html</link>
+    <description>Análise quantitativa do mercado brasileiro</description>
+    <language>pt-BR</language>
+    <lastBuildDate>Mon, 20 Apr 2026 08:19:15 -0000</lastBuildDate>
+    <atom:link href="https://radarfundamentalista-creator.github.io/radarfundamentalista/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://radarfundamentalista-creator.github.io/radarfundamentalista/favicon.png</url>
+      <title>Radar Fundamentalista</title>
+      <link>https://radarfundamentalista-creator.github.io/radarfundamentalista/index.html</link>
+    </image>
+    <item>
+      <title>Radar 20/04/2026 — Análise Quantitativa</title>
+      <link>https://radarfundamentalista-creator.github.io/radarfundamentalista/posts/2026-04-20.html</link>
+      <guid isPermaLink="true">https://radarfundamentalista-creator.github.io/radarfundamentalista/posts/2026-04-20.html</guid>
+      <description>📡 Radar Fundamentalista — 20 ABR 2026 📊 Universo analisado: 991 ações · 556 FIIs · 26 ETFs WIZC3 — Bolsa &amp; Financeiro P/L: 7.7x | DY: 5.9% | 🟡 Justa · ❗Baixa... Destaques: WIZC3, PSSA3, JHSF3.</description>
+      <pubDate>Mon, 20 Apr 2026 07:00:00 -0000</pubDate>
+    </item>
+    <item>
+      <title>Radar 19/04/2026 — Análise Quantitativa</title>
+      <link>https://radarfundamentalista-creator.github.io/radarfundamentalista/posts/2026-04-19.html</link>
+      <guid isPermaLink="true">https://radarfundamentalista-creator.github.io/radarfundamentalista/posts/2026-04-19.html</guid>
+      <description>Relatório fundamentalista do dia 19/04/2026</description>
+      <pubDate>Sun, 19 Apr 2026 07:00:00 -0000</pubDate>
+    </item>
+  </channel>
+</rss>
