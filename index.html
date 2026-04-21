@@ -732,7 +732,7 @@ a:hover { text-decoration: underline; }
          style="font-size:1rem;padding:14px 28px">
         📡 Assinar Canal Gratuito
       </a>
-      <a href="#lista-espera" class="btn btn-ghost"
+      <a href="#assinar-pro" class="btn btn-ghost"
          style="font-size:1rem;padding:14px 28px">
         ⭐ Lista de espera Pro
       </a>
@@ -830,24 +830,30 @@ a:hover { text-decoration: underline; }
 
       <!-- Pro -->
       <div class="plan-card featured">
-        <div class="plan-badge">EM BREVE</div>
+        <div class="plan-badge">🔥 OFERTA DE LANÇAMENTO</div>
         <div>
           <div class="plan-name">Pro</div>
-          <div class="plan-price" style="color:#FFD740">Em breve<span></span></div>
-          <div class="plan-desc">Para o investidor que quer ir mais fundo na análise.</div>
+          <div class="plan-price" style="color:#FFD740">
+            R$ 19,90<span>/mês</span>
+          </div>
+          <div class="plan-desc" style="color:#4D5580;font-size:0.8rem;margin-top:4px">
+            Primeiros 100 assinantes · depois R$ 49,90/mês
+          </div>
+          <div class="plan-desc" style="margin-top:8px">Para o investidor que quer ir mais fundo na análise.</div>
         </div>
         <ul class="plan-features">
           <li>Tudo do Free, mais:</li>
-          <li class="soon">Score detalhado por setor e subsetor</li>
-          <li class="soon">Upside por modelo DCF com taxa de desconto dinâmica</li>
-          <li class="soon">Relatório semanal em PDF com comentário analítico</li>
-          <li class="soon">Alertas personalizados por ticker</li>
-          <li class="soon">Backtesting do score nos últimos 5 anos</li>
-          <li class="soon">Acesso prioritário a novas funcionalidades</li>
+          <li>Relatório técnico completo diário (canal privado Telegram)</li>
+          <li>Cobertura de 900+ ações e 550+ FIIs</li>
+          <li>Score detalhado por setor e subsetor</li>
+          <li>Upside por modelo DCF com taxa de desconto dinâmica</li>
+          <li>Alertas de mudança de semáforo por ticker</li>
+          <li>Acesso prioritário a novas funcionalidades</li>
         </ul>
-        <a href="#lista-espera" class="btn btn-primary"
-           style="text-align:center;justify-content:center">
-          ⭐ Entrar na lista de espera →
+        <a href="#assinar-pro" class="btn btn-primary"
+           style="text-align:center;justify-content:center"
+           onclick="document.getElementById('modal-pro').style.display='flex';return false;">
+          ⭐ Assinar por R$ 19,90/mês →
         </a>
       </div>
 
@@ -908,8 +914,8 @@ a:hover { text-decoration: underline; }
         <div class="faq-a">Os dados fundamentalistas são coletados do portal <strong>Fundamentus</strong> (fundamentus.com.br) e da B3, que consolidam as informações divulgadas pelas próprias empresas em seus demonstrativos (ITR e DFP). Todo o processo é automatizado — nenhum dado é inserido ou editado manualmente.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q">Quanto vai custar o plano Pro?</div>
-        <div class="faq-a">Ainda estamos definindo o modelo de preços. Quem entrar na lista de espera será notificado com antecedência e poderá ter acesso a condições especiais de lançamento. <a href="#lista-espera">Entre na lista.</a></div>
+        <div class="faq-q">Quanto custa o plano Pro?</div>
+        <div class="faq-a">O plano Pro está em oferta de lançamento por <strong>R$ 19,90/mês</strong> para os primeiros 100 assinantes. Após isso, o valor passa a R$ 49,90/mês. O pagamento é via Pix e o acesso ao canal privado do Telegram é liberado manualmente em até 24h após a confirmação. <a href="#assinar-pro" onclick="document.getElementById('modal-pro').style.display='flex';return false;">Assine agora.</a></div>
       </div>
     </div>
   </div>
@@ -940,9 +946,10 @@ a:hover { text-decoration: underline; }
          class="btn btn-primary" style="font-size:1rem;padding:14px 32px">
         📡 Assinar Canal Gratuito →
       </a>
-      <a href="#lista-espera"
-         class="btn btn-ghost" style="font-size:1rem;padding:14px 32px">
-        ⭐ Lista de espera Pro
+      <a href="#assinar-pro"
+         class="btn btn-ghost" style="font-size:1rem;padding:14px 32px"
+         onclick="document.getElementById('modal-pro').style.display='flex';return false;">
+        ⭐ Assinar Pro — R$ 19,90/mês
       </a>
     </div>
     <p style="margin-top:24px;font-size:0.8rem;color:#4D5580">
@@ -973,5 +980,64 @@ a:hover { text-decoration: underline; }
     <p style="margin-top:6px;font-size:0.78rem">Análise quantitativa automatizada. Não é recomendação de investimento.</p>
   </div>
 </footer>
+
+<!-- ══════════════════════════════════════════════
+     MODAL — ASSINAR PRO VIA PIX
+══════════════════════════════════════════════ -->
+<div id="modal-pro" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);
+     z-index:9999;align-items:center;justify-content:center;padding:20px"
+     onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#0f1923;border:1px solid #1D9E75;border-radius:16px;
+              max-width:480px;width:100%;padding:36px;position:relative">
+    <button onclick="document.getElementById('modal-pro').style.display='none'"
+            style="position:absolute;top:16px;right:16px;background:none;border:none;
+                   color:#aaa;font-size:1.4rem;cursor:pointer;line-height:1">×</button>
+
+    <div style="color:#1D9E75;font-size:0.8rem;font-weight:700;letter-spacing:.08em;
+                text-transform:uppercase;margin-bottom:8px">🔥 Oferta de Lançamento</div>
+    <h2 style="font-size:1.5rem;font-weight:800;margin:0 0 4px">Radar Fundamentalista Pro</h2>
+    <p style="color:#aaa;font-size:0.9rem;margin:0 0 24px">
+      Relatório técnico completo · canal privado no Telegram · todo dia útil
+    </p>
+
+    <div style="background:#0a1219;border-radius:12px;padding:20px;margin-bottom:24px;text-align:center">
+      <div style="font-size:2rem;font-weight:900;color:#F5C842">R$ 19,90<span style="font-size:1rem;font-weight:400;color:#aaa">/mês</span></div>
+      <div style="color:#aaa;font-size:0.78rem;margin-top:4px">Primeiros 100 assinantes · depois R$ 49,90/mês</div>
+    </div>
+
+    <div style="margin-bottom:20px">
+      <div style="color:#aaa;font-size:0.8rem;margin-bottom:8px;font-weight:600">CHAVE PIX</div>
+      <div style="display:flex;gap:8px;align-items:center">
+        <div id="pix-key" style="background:#0a1219;border:1px solid #2a3a4a;border-radius:8px;
+                  padding:12px 14px;font-family:monospace;font-size:0.82rem;
+                  color:#e0e0e0;flex:1;word-break:break-all">18ea1d1e-c06d-4f3f-ae28-844f6cd80ec5</div>
+        <button onclick="navigator.clipboard.writeText('18ea1d1e-c06d-4f3f-ae28-844f6cd80ec5');this.textContent='✓';setTimeout(()=>this.textContent='Copiar',2000)"
+                style="background:#1D9E75;border:none;color:#fff;padding:10px 16px;
+                       border-radius:8px;cursor:pointer;font-size:0.85rem;font-weight:600;
+                       white-space:nowrap">Copiar</button>
+      </div>
+    </div>
+
+    <div style="background:#0a1219;border-radius:8px;padding:16px;margin-bottom:24px;
+                font-size:0.82rem;color:#aaa;line-height:1.6">
+      <strong style="color:#e0e0e0">Como funciona:</strong><br>
+      1. Faça o Pix de <strong style="color:#F5C842">R$ 19,90</strong> para a chave acima<br>
+      2. Envie o comprovante para <strong style="color:#e0e0e0">emaildaanaedopatrick@gmail.com</strong><br>
+      3. Acesso ao canal privado liberado em até <strong style="color:#e0e0e0">24h</strong>
+    </div>
+
+    <a href="mailto:emaildaanaedopatrick@gmail.com?subject=Comprovante%20Radar%20Pro&body=Olá%2C%20segue%20meu%20comprovante%20de%20assinatura%20do%20Radar%20Pro."
+       style="display:block;background:#1D9E75;color:#fff;text-align:center;padding:14px;
+              border-radius:10px;font-weight:700;text-decoration:none;font-size:0.95rem">
+      📧 Enviar comprovante por e-mail →
+    </a>
+
+    <p style="color:#555;font-size:0.72rem;text-align:center;margin-top:16px;line-height:1.5">
+      Não é uma recomendação de investimento. Cancele quando quiser.<br>
+      Radar Fundamentalista · CNPJ não obrigatório para pessoa física
+    </p>
+  </div>
+</div>
+
 </body>
 </html>
