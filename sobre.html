@@ -639,7 +639,7 @@ a:hover { text-decoration: underline; }
       O Radar Fundamentalista é um sistema de análise quantitativa do mercado de capitais
       brasileiro. Todos os dias úteis, o sistema coleta dados públicos de centenas de
       empresas listadas na B3, aplica um modelo de pontuação multifatorial e publica
-      um relatório com os ativos que melhor se enquadram nos critérios de
+      um relatório com os ativos que atendem os critérios quantitativos de
       <strong>valor, qualidade e retorno</strong>.
     </p>
     <p style="margin-top:14px">
@@ -817,8 +817,8 @@ a:hover { text-decoration: underline; }
     <p style="margin-top: 20px; font-size:0.9rem; color:#4D5580">
       A pontuação de cada componente é normalizada em relação ao universo de ativos
       analisados naquele dia, de forma que o score é sempre relativo — um score 80
-      significa que o ativo está entre os 20% melhores do mercado naquele critério,
-      não que atingiu um patamar absoluto.
+      significa que o ativo atende os critérios do modelo com mais intensidade que 80% do universo naquele indicador,
+      não que atingiu um patamar absoluto de qualidade.
     </p>
   </section>
 
@@ -826,7 +826,7 @@ a:hover { text-decoration: underline; }
   <section class="sobre-section">
     <h2>O sistema de semáforos</h2>
     <p>
-      O semáforo resume de forma imediata a posição do ativo no ranking geral.
+      O semáforo resume de forma imediata o grau de aderência do ativo aos critérios do modelo.
       É calculado a partir do score consolidado e de filtros qualitativos adicionais.
     </p>
     <table class="semaforos-table">
@@ -841,7 +841,7 @@ a:hover { text-decoration: underline; }
         <tr>
           <td><span class="sem-verde">🟢</span></td>
           <td>≥ 65</td>
-          <td>Ativo dentro dos critérios de qualidade e com desconto aparente. Merece atenção aprofundada.</td>
+          <td>Ativo atende os critérios de qualidade do modelo e apresenta desconto nos múltiplos. Merece análise aprofundada.</td>
         </tr>
         <tr>
           <td><span class="sem-amarelo">🟡</span></td>
@@ -851,14 +851,14 @@ a:hover { text-decoration: underline; }
         <tr>
           <td><span class="sem-vermelho">🔴</span></td>
           <td>&lt; 40</td>
-          <td>Ativo fora dos critérios ou com indicadores deteriorados. Não recomendado pelo modelo.</td>
+          <td>Ativo não atende os critérios do modelo ou apresenta indicadores deteriorados.</td>
         </tr>
       </tbody>
     </table>
     <p style="margin-top:16px; font-size:0.9rem">
-      O semáforo <strong>não é uma recomendação de compra</strong>. É o resultado de um
-      modelo matemático sobre dados históricos públicos. Use-o como ponto de partida
-      para sua própria due diligence.
+      O semáforo <strong>não é, em nenhuma hipótese, uma recomendação de compra ou venda</strong>.
+      É o resultado automatizado de um modelo matemático aplicado a dados históricos públicos.
+      Use-o como ponto de partida para sua própria análise. Consulte um profissional certificado (CNPI) antes de tomar qualquer decisão de investimento.
     </p>
   </section>
 
@@ -917,7 +917,7 @@ a:hover { text-decoration: underline; }
 
   <!-- ── Disclaimer ──────────────────────────────────── -->
   <div class="disclaimer" style="margin-bottom:40px">
-    <strong>Aviso importante:</strong> Análise quantitativa automatizada. Não é recomendação de investimento. As informações publicadas aqui
+    <strong>Aviso importante:</strong> Conteúdo informativo e educacional gerado de forma automatizada. Não constitui recomendação de investimento. Consulte um profissional certificado (CNPI). As informações publicadas aqui
     têm caráter exclusivamente educacional e informativo. Sempre consulte um
     profissional habilitado antes de tomar decisões de investimento.
   </div>
@@ -942,7 +942,7 @@ a:hover { text-decoration: underline; }
       <span style="font-weight:700;color:#6B7494">Radar Fundamentalista</span>
     </div>
     <p>© 2026 · Dados: Fundamentus + B3 · <a href="../sobre.html">Sobre</a></p>
-    <p style="margin-top:6px;font-size:0.78rem">Análise quantitativa automatizada. Não é recomendação de investimento.</p>
+    <p style="margin-top:6px;font-size:0.78rem">Conteúdo informativo e educacional gerado de forma automatizada. Não constitui recomendação de investimento. Consulte um profissional certificado (CNPI).</p>
   </div>
 </footer>
 </body>
